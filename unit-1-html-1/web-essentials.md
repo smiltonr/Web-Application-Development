@@ -191,6 +191,10 @@ Structure of the response:
 - A cache is a local copy of information obtained from some other Resource
 - Most web browsers use cache to store requested resources so that subsequent requests to the same resource will not necessarily require an HTTP request/response
   - Ex: icon appearing multiple times in a Web page
+
+
+![Client caching](cache1.png)
+
 - Cache advantages
   - (Much) faster than HTTP request/response
   - Less network traffic
