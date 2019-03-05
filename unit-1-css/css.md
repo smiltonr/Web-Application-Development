@@ -141,6 +141,7 @@ _Evaluation order of style sheets_
 - a  Record the number of id attributes in the selector.
 - b  Record the quantity of class selectors, attributes selectors, and pseudo classes.
 - c  Record the quantity of element names in the selector.
+
 Selector                  | a | b | c
 :-------------------------|---|---|--
 .                         | 0 | 0 | 0
