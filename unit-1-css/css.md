@@ -238,3 +238,16 @@ padding: 5px 15px;
 ```
 
 # Positioning `div` elements
+1. Static (default, normal, flow)
+2. Relative
+3. Absolute
+4. Fixed
+
+## Relative
+Offset from the normal flow.
+
+## Absolute
+Removed from the normal flow, and positioned w.r.t. to the first non-static element box (or browser window)
+
+## Fixed
+Removed from the normal flow, and positioned w.r.t. to  browser window.
