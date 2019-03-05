@@ -122,6 +122,7 @@ div + h1 {
     background-color: yellow;
 }
 ```
+9. Subsequent sibling selectors
 
 # Cascading
 _Precedence to calculate the style of an element_
@@ -211,3 +212,29 @@ p {
     border-color: green;
 }
 ```
+
+## Box parameters
+```
+p {
+    border-bottom: 10px;
+    border-right: 5px;
+    border-left: 1px;
+    border-top: 0px;
+    padding: 25px;
+    margin: 15px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: green;
+}
+```
+
+Shorthand
+```
+padding: 1px 2px 3px 4px ;
+```
+
+```
+padding: 5px 15px;
+```
+
+# Positioning `div` elements
