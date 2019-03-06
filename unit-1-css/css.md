@@ -313,11 +313,22 @@ padding: 5px 15px;
 3. Absolute
 4. Fixed
 
+```
+When to use div elements - override default flow of positioning of boxes  
+define using <div>
+```
+
+## Static
+
+Immediately after the previous box which is left aligned next box is placed.
+
 ## Relative
-Offset from the normal flow.
+Next box will be an Offset from the normal flow of the previous box.
+Immediately after the previous box and left aligned.
+Vertial and horizontal offset wrt to previous box.
 
 ## Absolute
-Removed from the normal flow, and positioned w.r.t. to the first non-static element box (or browser window)
+Removed from the normal flow, and positioned w.r.t. to the 'first non-static element box' (or browser window)
 
 ## Fixed
 Removed from the normal flow, and positioned w.r.t. to  browser window.
@@ -329,3 +340,18 @@ In the flow, push to the left or right of the box.
 1. content-box
 2. padding-box
 3. border-box
+
+
+
+# Block element box
+1. Content decides the box-width
+2. The browser window decides the box-height
+
+# _Two main Concerns are_
+
+# Placement of boxes
+1. Browser takes care
+2. Stylist takes care
+
+# Size of the boxes
+1. With respect to content or padding and content or content,padding and border
