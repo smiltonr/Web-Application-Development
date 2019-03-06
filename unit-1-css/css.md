@@ -251,3 +251,11 @@ Removed from the normal flow, and positioned w.r.t. to the first non-static elem
 
 ## Fixed
 Removed from the normal flow, and positioned w.r.t. to  browser window.
+
+## Float
+In the flow, push to the left or right of the box.
+
+# Box-sizing property
+1. content-box
+2. padding-box
+3. border-box
