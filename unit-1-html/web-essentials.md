@@ -19,7 +19,7 @@ February 25, 2018
 
 # The Internet
   - Internet: the network of networks connected via the public backbone and communicating using TCP/IP communication protocol
-  -Internet Protocols
+  - Internet Protocols
     - Communication protocol: how computers talk
     - Designed for use both within local area networks (LAN’s) and between networks
   - Communication infrastructure
@@ -41,7 +41,7 @@ February 25, 2018
 - Internet is the communication infrastructure
 - WWW is an information management technology
 - Several other technologies
--World Wide Web
+- World Wide Web
   - Originally, one of several systems for organizing Internet-based information
   - Competitors: WAIS, Gopher, ARCHIE
 - Distinctive features of Web: support for hypertext (text containing links)
