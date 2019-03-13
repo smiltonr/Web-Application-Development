@@ -184,16 +184,16 @@ Structure of the response:
 - Date: date and time at which response was generated (required)
 - Location: alternate URI if status is redirection
 - Last-Modified: date and time the requested resource was last modified on the server
-- Expires: date and time after which the client’s copy of the resource will be out-of-date
+- Expihttps://raw.githubusercontent.com/i-saumitrres: date and time after which the client’s copy of the resource will be out-of-date
 - ETag: a unique identifier for this version of the requested resource (changes if resource changes)
 
-# Client Caching
+## Client Caching
 - A cache is a local copy of information obtained from some other Resource
 - Most web browsers use cache to store requested resources so that subsequent requests to the same resource will not necessarily require an HTTP request/response
   - Ex: icon appearing multiple times in a Web page
 
 
-![Client caching](cache1.png)
+![Client caching](side-cache-local-cache.jpg)
 
 - Cache advantages
   - (Much) faster than HTTP request/response
