@@ -1,46 +1,76 @@
 # Data types
-## Primitive  data types
-1. number
-2. string
-3. Boolean
-## Object data types
-1. Object
-2. Array
-3. Function
 
-# Type conversion
+## Primitive  data types
+
+1. number (floating point numbers - 64bit,hexadecimal -0X/0x , no octal representation)(hexadecimal escaped \0xxxx (16bit code representation)
+2. string (16 bit , no separate character variable class,unicode - 2bytes)
+3. Boolean (True/False)
+
+No data type variable with value - undefined.
+
+Infinity,-Infinity - outside 64bit numbers are discribed by this -> -1/0 = -Infinity
+NaN - Not A Number - Infinity by Infinity
+
+## Object data types
+
+1. Object Ex {x:5,y:6} comma separated list of properties and their corresponding values.
+2. Array  Ex {23,41,11,18} comma separated list of values.
+3. Function Ex - function(x) { return 5*x; } , anonymous function - without function name specification
+
+
+# Type conversion (Implicit type conversion)
 ## Number
 
-Type    | Value                      | Number
---------|----------------------------|----------
-        | undefined                  | NaN
-string  | ""                         | 0
-        | string representing number | number
-        | other strings              | NaN
-boolean | false                      | 0
-        | true                       | 1
-object  | null                       | 0
-        | not null                   | valueOf()
+Type    |  Value                      |  Number
+:------:| :-------------------------: | :-------:
+NoType  | undefined                   |  NaN
+string  | ""                          |  0
+string  | string representing number  |  number
+string  | other strings               |  NaN
+boolean | false                       |  0
+boolean | true                        |  1
+object  | null                        |  0
+anyobj  | not null                    |  valueOf()
 
 ## String
 Type    | Value               | Number
---------|---------------------|------------------------
-        | undefined           | "undefined"
-number  | NaN                 | "NaN"
-        | Infinity, -Infinity | "Infinity", "-Infinity"
-        | other numbers       | number
-boolean | false, true         | "false", "true"
-object  | null                | "null"
-        | not null            | toString()
+:------:| :-----------------: |  :----------:
+Notdef  | undefined           |  "undefined"
+number  | NaN                 |  "NaN"
+Infinite| Infinity, -Infinity |  "Infinity", "-Infinity"
+Other   | other numbers       |  number
+boolean | false, true         |  "false", "true"
+object  | null                |  "null"
+anystr  | not null            |  toString()
 
 ## Boolean
 
 Type   | Value         | Number
--------|---------------|-------
-       | undefined     | false
+:-----:| :-----------: | :------:
+NoType | undefined     | false
 number | NaN           | false
-       | other numbers | true
+SomeNum| other numbers | true
 string | ""            | false
-       | not empty     | true
+nonempstr| not empty     | true
 object | null          | false
-       | not null      | true
+anyobj | not null      | true
+Nan    | Not a number  | false
+empty  | Empty obj     | true
+
+
+# Arithmetic Operators
+1.Addition
+
+2.Subraction
+
+3.Addition with string - concatenation - Implicit Conversion of a string to number when a number is concatenated with it
+
+4.Power  **
+
+5.Equivalence - strict equals (===) equality and same data type or equals (==)
+
+
+# Comparision Operators
+1. && , || , != (Binary Operator)
+
+2. Unary Operators - ~,!,-
