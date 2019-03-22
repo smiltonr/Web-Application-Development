@@ -13,9 +13,9 @@ NaN - Not A Number - Infinity by Infinity
 
 ## Object data types
 
-1. Object Ex {x:5,y:6} comma separated list of properties and their corresponding values.
-2. Array  Ex {23,41,11,18} comma separated list of values.
-3. Function Ex - function(x) { return 5*x; } , anonymous function - without function name specification
+1. **Object** Ex {x:5,y:6} comma separated list of properties and their corresponding values.
+2. **Array**  Ex {23,41,11,18} comma separated list of values.
+3. **Function** Ex - function(x) { return 5*x; } , anonymous function - without function name specification
 
 
 # Type conversion (Implicit type conversion)
@@ -58,6 +58,14 @@ Nan    | Not a number  | false
 empty  | Empty obj     | true
 
 
+Boolean results are always **Boolean**.
+
+**Short circuit evaluation** of the boolean expression
+a && b &&c
+if a or b is false finish the computation.
+
+
+
 # Arithmetic Operators
 1.Addition
 
@@ -74,3 +82,5 @@ empty  | Empty obj     | true
 1. && , || , != (Binary Operator)
 
 2. Unary Operators - ~,!,-
+
+Comparision operators might not always return Boolean result.
