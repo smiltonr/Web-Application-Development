@@ -84,3 +84,7 @@ if a or b is false finish the computation.
 2. Unary Operators - ~,!,-
 
 Comparision operators might not always return Boolean result.
+
+# Arrays
+
+Concatination is without any side effects.
