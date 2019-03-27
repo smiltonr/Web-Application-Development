@@ -5,3 +5,8 @@
 
 
 Read The JavaScript the good parts for a better understanding
+Spend One hour in Learning Functional Programming.
+Learn about date and regular expression objects.
+Learn about object prototype.
+
+Install and Atom and Hydrogen - Windowsq
