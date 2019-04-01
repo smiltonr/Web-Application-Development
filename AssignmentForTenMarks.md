@@ -9,4 +9,6 @@ Spend One hour in Learning Functional Programming.
 Learn about date and regular expression objects.
 Learn about object prototype.
 
-Install and Atom and Hydrogen - Windowsq
+Install and Atom and Hydrogen - Windows
+
+Implement Binary Search Tree in JavaScript
