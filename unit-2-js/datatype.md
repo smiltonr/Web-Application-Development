@@ -23,6 +23,7 @@ object  | null                       | 0
         | not null                   | valueOf()
 
 ## String
+
 Type    | Value               | Number
 --------|---------------------|------------------------
         | undefined           | "undefined"
@@ -33,6 +34,25 @@ boolean | false, true         | "false", "true"
 object  | null                | "null"
         | not null            | toString()
 
+```js
+var  states = [[false, false], [false,true], [true, false], [true, true]];
+for (var i in states){
+  console.log(states[i], states[i][0] || states[i][1]);
+  // console.log(state[0] && state[1])
+}
+```
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+%matplotlib inline
+%config InlineBackend.figure_format = 'svg'
+t = np.linspace(0, 20, 500)
+
+plt.plot(t, np.sin(t))
+plt.show()
+```
 ## Boolean
 
 Type   | Value         | Number
@@ -44,3 +64,4 @@ string | ""            | false
        | not empty     | true
 object | null          | false
        | not null      | true
+
