@@ -5,6 +5,9 @@
 
 
 Read The JavaScript the good parts for a better understanding
+
+Read The JavaScript Pocket Reference
+
 Spend One hour in Learning Functional Programming.
 Learn about date and regular expression objects.
 Learn about object prototype.

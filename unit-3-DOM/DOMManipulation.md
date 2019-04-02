@@ -21,3 +21,24 @@
            2. Changing the CSS properties of an element.
            3. Changing attribute value for the DOM element.
            4. Element can also have event attribute (intrinstic).
+
+# Host Objects Browser and the DOM
+
+Objects have properties and methods.
+
+Element - Normal Type
+
+Node -  Data Node
+        1. Data - Text
+        2. Data - Type
+
+Destructive
+
+When the javascript gets executed - Event specification
+
+Validation of form data.
+
+
+Homework - Pass style as explicit
+Based on class and event - add event listeners
+Write a DOM script to emulate the MENU - Jeffrey Jackson Reference
