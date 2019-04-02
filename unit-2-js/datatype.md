@@ -33,6 +33,7 @@ object  | null                        |  0
 anyobj  | not null                    |  valueOf()
 
 ## String
+
 Type    | Value               | Number
 :------:| :-----------------: |  :----------:
 Notdef  | undefined           |  "undefined"
@@ -43,6 +44,25 @@ boolean | false, true         |  "false", "true"
 object  | null                |  "null"
 anystr  | not null            |  toString()
 
+```js
+var  states = [[false, false], [false,true], [true, false], [true, true]];
+for (var i in states){
+  console.log(states[i], states[i][0] || states[i][1]);
+  // console.log(state[0] && state[1])
+}
+```
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+%matplotlib inline
+%config InlineBackend.figure_format = 'svg'
+t = np.linspace(0, 20, 500)
+
+plt.plot(t, np.sin(t))
+plt.show()
+```
 ## Boolean
 
 Type   | Value         | Number
@@ -53,6 +73,7 @@ SomeNum| other numbers | true
 string | ""            | false
 nonempstr| not empty     | true
 object | null          | false
+<<<<<<< HEAD
 anyobj | not null      | true
 Nan    | Not a number  | false
 empty  | Empty obj     | true
@@ -88,3 +109,7 @@ Comparision operators might not always return Boolean result.
 # Arrays
 
 Concatination is without any side effects. 
+=======
+       | not null      | true
+
+>>>>>>> 8d211f5ead7fdd2ff4ed1d018ceaaddf80a17807
