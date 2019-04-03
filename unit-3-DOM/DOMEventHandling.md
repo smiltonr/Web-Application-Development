@@ -41,6 +41,9 @@
          3. Focus
          
          4. Blur
+         
+         5. Load and Unload
+         
  
  9. Events associated to elements in DOM.
 
@@ -59,7 +62,15 @@
 14. Several ways to add Event Handler 
                 
                   1. addEventListener
+                            
+                             element.addEventListener(event, function, useCapture);
+                              
+                              useCapture -true capture , false -bubbling
+                             
                   2. attachEvent
+
+                             element.attachEvent(event, function);
+
    
 15. Event object 
         
@@ -67,5 +78,14 @@
                  2. Target element
                  3. Event Listener/Handler
  
-16. 
+ 
+16.  Event Processing 
+               
+                To many event handlers to the enclosing parent nodes to the element with another event handler.
+                We need to process the events - Event Processing
+ 
+ 
+17.  Registering several event listener to same element
+
+18.  Order Precedence - Event processing
         
