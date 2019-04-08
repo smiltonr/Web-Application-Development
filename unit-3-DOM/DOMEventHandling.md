@@ -1,5 +1,5 @@
 
-# DOM Event Handling 
+# DOM Event Handling - Read Chapter 12 of JavaScript Pocket Reference
 
 1. Javascript API for DOM
 
@@ -44,6 +44,12 @@
          
          5. Load and Unload
          
+         6. Form Event 
+         
+         7. Key Event
+         
+         8. Mouse Event 
+         
  
  9. Events associated to elements in DOM.
 
@@ -65,7 +71,9 @@
                             
                              element.addEventListener(event, function, useCapture);
                               
-                              useCapture -true capture , false -bubbling
+                              useCapture -true capture , false -bubbling event listener 
+                              When event listener is capture - more precedence
+                                                     bubbling - less precedence 
                              
                   2. attachEvent
 
@@ -85,7 +93,59 @@
                 We need to process the events - Event Processing
  
  
-17.  Registering several event listener to same element
+17.  Registering several event listener to same element.
 
-18.  Order Precedence - Event processing
-        
+18.  Order Precedence - Event processing.
+
+19.  Browser window 
+
+     Contains - 
+                
+                Document Object
+                
+                Element Object
+       
+20. Event target matters.
+
+    Two types of Event handler
+    
+              1. Bubbling event handler
+              2. Capture event handler 
+              
+              Capture precedence over bubbling
+              
+              
+              Non bubbling 
+                
+                      1. load
+                      2. unload 
+                      3. focus
+                      4. blur 
+              
+
+21. Binding Event type with event object when Event is registered.
+
+22. Specific Topic - Todays topic 
+
+# Event Propagation 
+
+Registering an event listener same type to ancestor and the particular element - 
+
+Element listener is applicable to all its enclosing outer elements. 
+
+Order of precedence 
+ 
+                1. Event Bubbling
+                2. Top down 
+                3. Both bubbling and inner nesting - More precedence to capture over bubbling 
+                4. Same target - different listener - order of registering 
+                
+ properties 
+               eventPhase()
+               currentTarget()
+              Event Cancellation - stopPropagation() - Prevent Default handler from invocation
+               
+               Bubbling event handler - Default event handler 
+               Capturing event handler - Specific event handling 
+
+                
