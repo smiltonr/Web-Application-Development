@@ -141,11 +141,23 @@ Order of precedence
                 4. Same target - different listener - order of registering 
                 
  properties 
-               eventPhase()
-               currentTarget()
-              Event Cancellation - stopPropagation() - Prevent Default handler from invocation
-               
+               1. eventPhase()
+               2. currentTarget()
+               3. Event Cancellation - stopPropagation() - Prevent Default handler from invocation
+                                       stopImmediatePropagation()
+                                   
                Bubbling event handler - Default event handler 
                Capturing event handler - Specific event handling 
+               
+ # Form Validation 
+  
+             validate - satisfying required condition
+              
+                        Return false when fails 
+                        Return true when valid 
+                        
+                        
+      
+               
 
                 
