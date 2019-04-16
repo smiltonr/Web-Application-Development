@@ -17,7 +17,6 @@
                    Count them
 
                    Write Django Web application in one file
-<<<<<<< HEAD
 
 
 View function takes HTTPRequest object
@@ -25,37 +24,25 @@ and Returns HTTPResponse object
 
 
 HTML Template - Template variables
-     
-=======
-                   
-4. Creation of project 
- 
-                  > django-admin.py startproject mysite --template=project_name
-                  
-5. Create a python virtual environment 
- 
-                  > pip install virtualenv
-                  > virtualenv <Virtual Environment variable>
- 
-6. URL Patterns - Variable : 
-                  Specify path of view functions 
-                  Defined in Module 
 
-7. Every py file  : Module
- 
-8. settings - URL mapper which location 
+Rendering converts the rendering
 
-9. Settings are in a file - settings.py
-   
-   URL files - conf and app dir separately 
-   
-10. Settings.py 
+Template variables are passed as dictionary -
 
-            URL Mapping defined in same file  ROOT_URLCONF=__name__ (same file)
-            Views are defined this module  function index 
-          
-11. Front Page __Todays discussion__
+Values comes from the states -
 
-        Rendering : Converts HTML template into HTML page
-        
->>>>>>> c20f7c98d2284896d065ffceb3d99d7b041fe1a6
+Few database changes are required for view function
+
+View function - retrieves the data from database and renders in Template
+
+Models - database tables
+
+# Today's Focus - How to define tables
+
+1. Abstraction to the database tables - Models
+
+2. Class in python - No table schema
+
+3. Row corresponds to the instance of the class.
+
+4. 
