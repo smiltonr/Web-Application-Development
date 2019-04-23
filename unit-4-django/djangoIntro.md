@@ -2,6 +2,75 @@
 
 1. Model Template View
 
+          URLMapper/Routing
+          View
+          Template
+          Model
+          Form
+          
+          
+         URL - two parts 
+                            Host 
+                            Port
+         Web server  - URL host 
+          
+                           www.example.com/index.html               Locate server
+                           http://localhost:8080/admin/index.html   Locate the file in server 
+         
+         What comes after host and port  - URL 
+         
+         Response contains metadata- contains the dynamic content 
+         
+         For which URL corresponding view function - URL routing/mapping
+         
+         Variable - urlmapper - urlpatterns variable 
+         
+         urls.py 
+         
+         settings.py - entry point 
+         
+         One configuration directory  - settings.py , urls.py
+         One or Many application directory - 
+         
+         Relative path  with respect to the home directory of the application 
+         
+         mysite.url
+         mysite.settings
+         myapp.model - pyrhon 
+         myapp/models.py - dir
+         myapp.admin- python 
+         myapp/admin.py 
+         
+         
+         
+         HTML 
+          
+              Control variable
+              Control Structures 
+              
+          settings.py - where are the template directories - specified 
+          
+          Values for the template - passed by the index - view function 
+          
+          Converts from htmltemplate page to html 
+          
+          django.view import render
+          
+          Variables - number string or dict 
+          
+          static files are stored in a variable staticfiles_dirs 
+          
+          
+          Model ---- DB table 
+          
+          ORM 
+          
+          
+          
+          
+         
+                           
+
 2. Ease of management - separation as MTV
 
 3. startProject and startLayout
@@ -45,4 +114,7 @@ Models - database tables
 
 3. Row corresponds to the instance of the class.
 
-4. 
+4.  ORM  -=- Model 
+
+5. Template refers to the query result 
+
