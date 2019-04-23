@@ -118,3 +118,33 @@ Models - database tables
 
 5. Template refers to the query result 
 
+
+# Question Possible 
+
+
+Name and Mark - 
+
+Query - 
+Question - Filter when marks >= 50
+
+Query Result - list(that QueryResult object)
+
+
+Dictionary creation - 
+
+               Key pass mark 
+               value  - query result 
+               
+               
+              Template  - 
+              
+                       Render the result of query Name and Mark as a __table__ 
+ 
+Show an image
+
+3 two marks in Django and rest from Js
+
+
+
+                       
+                       
