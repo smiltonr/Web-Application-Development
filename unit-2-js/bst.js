@@ -1,78 +1,99 @@
-function BSTnode(val, left, right) {
-  this.val = val;
-  this.left = left;
-  this.right = right;
-  this.isLeaf = function () {
-    return this.left == null && this.right == null;
-  };
-  this.search = function (key) {
-    return searchR(this, key);
+  function BSTnode(val, left, right) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
+    this.isLeaf = function () {
+      return this.left == null && this.right == null;
+    };
+    this.search = function (key) {
+      return searchR(this, key);
+    }
+
+    function searchR(tree, key)
+    {
+      if (tree == null) {
+        return null;
+      }
+      if (key == tree.val) {
+        return tree;
+      }
+      else if (key < tree.val) {
+        return searchR(tree.left, key);
+      }
+      else {
+        return searchR(tree.right, key);
+      }
+    }
+    /*
+    this.insert = function (key)
+    {
+      if (this == null) {
+        return new BSTnode(key, null, null);
+      }
+      if (key < this.val) {
+        this.left = insert(this.left, key);
+        return this;
+      }
+      else {
+        this.right = insert(this.right, key);
+        return this;
+      }
+    }
+    */
   }
 
-  function searchR(tree, key)
+  var tree = new BSTnode(5,
+                         new BSTnode(3, null, null),
+                         new BSTnode(8,
+                                  new BSTnode(6, null, null),
+                                  new BSTnode(9, null, null)
+                                 )
+                        );
+  var target = 7;
+  var hit = tree.search(target);
+  if (hit != null) {
+    console.log(hit.val);
+  }
+  else {
+    console.log(target, "not found.")
+  }
+
+
+  function BSTnode1(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+    this.isLeaf = function () {
+      return this.left == null && this.right == null;
+    };
+  }
+
+
+  var node2 = new BSTnode(8, null, null);
+  var node1 = new BSTnode(5, null, node2);
+  //node1.right = node2;
+  console.log(node1.val, node1.left, node1.right);
+  console.log(node2.val, node2.left, node2.right);
+  console.log("node1 is " + (node1.isLeaf() ? "":"not ") + "a leaf.");
+  console.log("node2 is " + (node2.isLeaf() ? "":"not ") + "a leaf.");
+
+  function creationOfBSTTree()
   {
-    if (tree == null) {
-      return null;
-    }
-    if (key == tree.val) {
-      return tree;
-    }
-    else if (key < tree.val) {
-      return searchR(tree.left, key);
-    }
-    else {
-      return searchR(tree.right, key);
-    }
+    var root=BSTnode(6,BSTnode(4,null,BSTnode(5,null,null)),BSTnode(8,BSTnode(7,null,null),BSTnode(9,null,null)))
+    return root
   }
-  /*
-  this.insert = function (key)
+
+  function printBSTTree(root,level)
   {
-    if (this == null) {
-      return new BSTnode(key, null, null);
+    if(root==null)
+    return
+    for(var i=0;i<level;i++)
+    {
+      console.log("--");
     }
-    if (key < this.val) {
-      this.left = insert(this.left, key);
-      return this;
-    }
-    else {
-      this.right = insert(this.right, key);
-      return this;
-    }
+    console.log(root.key+"\n")
+    
+
   }
-  */
-}
 
-var tree = new BSTnode(5,
-                       new BSTnode(3, null, null),
-                       new BSTnode(8,
-                                new BSTnode(6, null, null),
-                                new BSTnode(9, null, null)
-                               )
-                      );
-var target = 7;
-var hit = tree.search(target);
-if (hit != null) {
-  console.log(hit.val);
-}
-else {
-  console.log(target, "not found.")
-}
-
-
-function BSTnode1(val) {
-  this.val = val;
-  this.left = null;
-  this.right = null;
-  this.isLeaf = function () {
-    return this.left == null && this.right == null;
-  };
-}
-
-
-var node2 = new BSTnode(8, null, null);
-var node1 = new BSTnode(5, null, node2);
-//node1.right = node2;
-console.log(node1.val, node1.left, node1.right);
-console.log(node2.val, node2.left, node2.right);
-console.log("node1 is " + (node1.isLeaf() ? "":"not ") + "a leaf.");
-console.log("node2 is " + (node2.isLeaf() ? "":"not ") + "a leaf.");
+  console.log(creationOfBSTTree)

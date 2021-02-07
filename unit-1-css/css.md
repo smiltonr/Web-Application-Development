@@ -75,6 +75,7 @@ button {
 </html>
 ```
 4. Universal selector
+Every element has the same style.
 ```
 \* {
   background-color: white;
@@ -82,6 +83,7 @@ button {
 }
 ```
 5. Descendant selector
+
 ```
 li a {
     text-decoration: none;
@@ -123,12 +125,70 @@ div + h1 {
 }
 ```
 9. Subsequent sibling selectors
+```
+div ~ h1 {
+    background-color: yellow;
+}
+```
+10. Super class
+```
+ We highlight the link when it is
+ hovered over (mouse over), activated (mouse down)
+ or focused (keyboard)
+```
+```
+a:hover,
+a:active,
+a:focus {
+  color: darkred;
+  text-decoration: none;
+}
+```
+11.Pseudo element selectors
 
+```
+They are keywords, this time preceded by two colons (::), that can be added to the end of selectors to select a certain part of an element.
+
+1) ::after
+2) ::before
+3) ::first-letter
+4) ::first-line
+5) ::selection
+6) ::backdrop
+They all have some very specific behaviors and interesting features, but digging into them all in detail is beyond our scope for now.
+```
+```
+All elements with an attribute "href" with values   starting with "http" will have an arrow added after their content (to indicate they are external links)
+[href^=http]::after {
+  content: '⤴';
+}
+
+```
 # Cascading
 _Precedence to calculate the style of an element_
-1. Important
-2. Specificity
-3. Textual order
+1. Important(Exclamation)(Style property which is marked important has highest precedence value - overrides if more styles are present.)
+2. Specificity(Arranged in order accordance to it)
+3. Textual order(When two or more style which has same Specificity then)
+
+_Textual Order_
+1. Imported multiple styles
+2. Imported Style sheet
+3. Inline Style sheet
+4. Embedded style
+
+
+
+_Sources for Style_
+1. Multiple style sheets
+2. Imported style sheets
+3. Inline Style
+4. Element specific inline style or Embedded style rule for a html element
+
+_Style sheet types_
+1. Style sheet by Author(can  takeover others)
+2. Style sheet by the browser
+3. Style sheet by the User - Accessibilty(User important styles takes highest precendence)
+
 
 _Evaluation order of style sheets_
 1. Browser’s built-in style sheet
@@ -157,6 +217,10 @@ div.content + li.selected | 0 | 2 | 3
 #main ul + li.selected    | 1 | 1 | 2
 
 ## Inheritance
+
+Inherit instead of having all the elements defined with style.
+
+
 ```
 body {
     font-size: x-large;
@@ -170,12 +234,14 @@ li:nth-child(4) {
 ```
 
 # Text properties
-## Font family
-- serif
-- sans serif
-- monospace
-- cursive
-- fantasy
+## Font family Group
+* serif
+* sans serif
+* monospace
+* cursive
+* fantasy
+
+List of values -> depending upon the browser inbuild Stylesheet
 
 ```
 h1 { font-family: arial, verdana, sans-serif; }
@@ -184,10 +250,10 @@ h1 { font-family: "courier new", monospace; }
 ```
 
 ## Font size
-- em (relative)
+- em (relative) -relative with respect to parent.
 - px (absolute)
 - pt
-- pc
+- pc (12 pt makes pc)
 - in
 - mm
 - cm
@@ -200,7 +266,9 @@ h1 { font-family: "courier new", monospace; }
     h1 { font-size: 2cm; }
 ```
 
-# Box model
+# CSS Box model
+Rectangular Box
+
 ![CSS Box Model](css-box.png)
 ```
 p {
@@ -230,10 +298,12 @@ p {
 
 Shorthand
 ```
+Order- trbl -top,right,bottom,left
 padding: 1px 2px 3px 4px ;
 ```
 
 ```
+tr- top,right , top=bottom, right=left
 padding: 5px 15px;
 ```
 
@@ -243,11 +313,22 @@ padding: 5px 15px;
 3. Absolute
 4. Fixed
 
+```
+When to use div elements - override default flow of positioning of boxes  
+define using <div>
+```
+
+## Static
+
+Immediately after the previous box which is left aligned next box is placed.
+
 ## Relative
-Offset from the normal flow.
+Next box will be an Offset from the normal flow of the previous box.
+Immediately after the previous box and left aligned.
+Vertial and horizontal offset wrt to previous box.
 
 ## Absolute
-Removed from the normal flow, and positioned w.r.t. to the first non-static element box (or browser window)
+Removed from the normal flow, and positioned w.r.t. to the 'first non-static element box' (or browser window)
 
 ## Fixed
 Removed from the normal flow, and positioned w.r.t. to  browser window.
@@ -259,3 +340,18 @@ In the flow, push to the left or right of the box.
 1. content-box
 2. padding-box
 3. border-box
+
+
+
+# Block element box
+1. Content decides the box-width
+2. The browser window decides the box-height
+
+# _Two main Concerns are_
+
+# Placement of boxes
+1. Browser takes care
+2. Stylist takes care
+
+# Size of the boxes
+1. With respect to content or padding and content or content,padding and border
